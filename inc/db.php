@@ -1,5 +1,4 @@
 <?php
-    // add this at the start of the script
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     define('HOST', 'localhost');
@@ -12,5 +11,4 @@
     if(!$conn) {
         die("Connection Failed: " . $conn->connet_error());
     }
-
 ?>
