@@ -1,0 +1,26 @@
+Database
+---------------------------------------------------------------------------------------------------------------------------------------
+CREATE DATABASE db_tupac;
+---------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE users (
+    id INT(11) PRIMARY AUTO_INCREMENT,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255),
+    created_at timestamp
+);
+---------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE feedback (
+    comment_id INT(11) PRIMARY AUTO_INCREMENT,
+    comment_name VARCHAR(100),
+    comment_content VARCHAR(255),
+    date date
+);
+---------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE contact (
+    id INT(11) PRIMARY AUTO_INCREMENT,
+    contact_name VARCHAR(100),
+    contact_email VARCHAR(100) UNIQUE,
+    contact_title VARCHAR(100),
+    contact_content VARCHAR(255)
+);
