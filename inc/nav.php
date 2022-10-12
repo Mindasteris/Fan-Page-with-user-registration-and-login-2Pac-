@@ -8,7 +8,7 @@
         <h1 class="logo">Tupac <span>Shakur</span></h1>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-            <i class="fa fa-bars"></i></a>
+                <i class="fa fa-bars"></i></a>
             <nav>
                 <ul class="menu" id="myLinks">
                     <li><a href="./index.php">Home</a></li>
@@ -27,7 +27,10 @@
 <?php } else {?>
     <header>
         <h1 class="logo">Tupac <span>Shakur</span></h1>
-        <nav class="topnav">
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+            <i class="fa fa-bars"></i></a>
+        <nav>
             <ul class="menu" id="myLinks">
                     <li><a href="./index.php">Home</a></li>
                     <li><a href="./story.php">Story</a></li>
