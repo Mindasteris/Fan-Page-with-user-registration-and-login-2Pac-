@@ -1,1 +1,3 @@
-# Fan Page of Tupac Shakur with user registration, comment section. Pure HTML and CSS.
+# Fan Page of 2Pac
+
+Project about legendary hip hop artist Tupac Shakur with user registration, login and comment section. HTML,CSS,PHP.
