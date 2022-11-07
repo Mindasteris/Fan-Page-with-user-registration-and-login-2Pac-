@@ -25,5 +25,5 @@
             </ul>
         </div>
     </div>
-        <p class="p-footer">&copy; All Rights Reserved. <?php echo date("Y"); ?></p>
+        <p class="p-footer">&copy; All Rights Reserved. Mindaugas <?php echo date("Y"); ?></p>
     </footer>
