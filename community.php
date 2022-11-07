@@ -60,6 +60,8 @@
     <meta name="keywords" content="Hip Hop, 2Pac, Tupac, Amaru, Shakur, HTML, CSS">
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Tab Icon -->
     <link rel="icon" href="images/tab_icon.png">
     <!-- BS Icons -->
@@ -74,9 +76,11 @@
 
     <div class="container">
 
+        <h1 class="heading-1">Comments</h1>
+
         <div class="feedback">
 
-            <h3>Please leave a comment :</h3>
+            <h3 class="text-center">Leave a comment :</h3>
 
             <form action="" method="POST">
                  <!-- PHP -->
@@ -138,5 +142,7 @@
 
     <?php include ('inc/footer.php'); ?>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: black !important;
 }
 
 /* Home page */
@@ -22,9 +22,13 @@ header {
 .logo {
     color: white;
     cursor: pointer;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard */
+    /*-webkit-user-select: none; /* Safari */
+    /*-ms-user-select: none; /* IE 10 and IE 11 */
+    /*user-select: none; /* Standard */
+}
+
+.logo-link {
+    text-decoration: none;
 }
 
 span {
@@ -83,6 +87,7 @@ span {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 100px;
+    
 }
 /* 50% */
 .main-small {
@@ -134,6 +139,11 @@ footer h2::after {
     transform: scaleX(0);
 }
 
+footer li a:hover {
+    color: #ea1538;
+    transition: .5s;
+}
+
 /* Displaying The Text Underline On Mouse Hover */
 footer h2:hover::after {
     transform: scaleX(1);
@@ -141,12 +151,9 @@ footer h2:hover::after {
 
 footer ul {
     list-style-type: none;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
     text-align: center;
-}
-
-footer ul li {
-    padding: 10px;
 }
 
 footer ul li a {
@@ -235,6 +242,10 @@ h4 {
     
 }
 
+hr {
+    color: white !important;
+}
+
 /* Story */
 /* Card Biography */
 .card {
@@ -242,12 +253,13 @@ h4 {
     max-width: 300px;
     margin: 0 auto;
     margin-top: 20px;
-    border: 1px solid white;
+    border: 1px solid white !important;
     padding: 5px;
+    background-color: black !important;
 }
 
 .title {
-    color: grey;
+    color: white;
     font-size: 18px;
     padding: 5px;
 }
@@ -267,6 +279,11 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+}
+
+.wraps-albums img:hover {
+    cursor: pointer;
+    padding: 3px;
 }
 
 figure img {
@@ -385,22 +402,12 @@ h3 {
     text-align: center;
 }
 
-/* Hamburger Menu */
-.icon {
-    display: none;
-}
-
 /******************** Media Queries - Responsive ********************/
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
     header {
         display: block;
-    }
-    .menu {
-        display: none;
-        width: 100%;
-        padding: 20px;
     }
     .login {
         display: block;
@@ -427,6 +434,34 @@ h3 {
     h2 {
         text-align: center;
         margin-top: 20px;
+    }
+    .main-small {
+        width: 100%;
+    }
+    .feedback {
+        width: 100%;
+    }
+    .all-inputs input {
+        width: 100%;
+    }
+    .all-inputs textarea {
+        width: 100%;
+    }
+    .btn-comment-post {
+        width: 100%;
+    }
+    .btn-login {
+        width: 100%;
+    }
+    .bar {
+        width: 100%;
+    }
+    footer h2 {
+        width: 100%;
+    }
+    footer p {
+        border-top: 1px solid white;
+        padding: 10px;
     }
 }
 /* Tablet and Higher */
